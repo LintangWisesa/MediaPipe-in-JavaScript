@@ -153,7 +153,7 @@ function onResultsPose(results) {
   //-----------------------------------
 
 
-  //console.log(results.poseLandmarks[0]);
+  console.log(results.poseLandmarks[0]);
 
   canvasCtx5.save();
   canvasCtx5.clearRect(0, 0, out5.width, out5.height);

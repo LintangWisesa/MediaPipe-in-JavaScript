@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.css" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="demo.css" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.1/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.2/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.2/pose.js" crossorigin="anonymous"></script>
+
+  <style type = text/css>
+    .landmark_coordinates {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+
+
+
+<body>
+
+  <!-- CONTENTS --> 
+  <div class="container" style="margin-top: 20px;">
+    
+  <video style="visibility: hidden; height:0; width:0;" class="input_video5"></video>
+
+    <div class="columns">
+
+      <!-- MEDIAPIPE OUTPUT -->
+      <div class="column is-two-thirds">
+        <article class="panel is-info">
+          <p class="panel-heading">
+            Mediapipe Pose Detection
+          </p>
+          <div class="panel-block">
+
+            <canvas class="output5" width="480px" height="480px"></canvas>
+          </div>
+        </article>
+      </div>  
+            <!-- MEDIAPIPE OUTPUT -->
+            <div class="column">
+              <article class="panel is-info">
+                <p class="panel-heading">
+                  Detection Results
+                </p>
+                <div class="panel-block">
+                  <p class = "pose_results">Initializing</p>
+                </div>
+
+                <div class="panel-block">
+                  <p class = "pose_results">Initializing</p>
+                </div>
+
+                <div class="panel-block">
+                  <p class = "pose_results">Initializing</p>
+                </div>
+                
+                <div class="panel-block">
+                  <p class = "pose_results">Initializing</p>
+                </div>
+                
+
+              </article>
+            </div>  
+
+    </div>
+    
+    <div class="loading">
+      <div class="spinner"></div>
+    </div>
+    <div style="visibility: hidden;" class="control5">
+  </div>
+
+            
+  <script type="text/javascript" src="./js/pose.js"></script>
+</body>
+</html>
